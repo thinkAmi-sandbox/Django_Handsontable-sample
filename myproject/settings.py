@@ -37,6 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    # addition for my application
+    'myapp',
 ]
 
 MIDDLEWARE = [
@@ -118,3 +121,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
+
+# addition for collectstatic
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# addition for serializer
+SERIALIZATION_MODULES = {
+    "handsontablejson": "myproject.serializers"
+}

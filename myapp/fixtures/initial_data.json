@@ -1,0 +1,46 @@
+[
+    {
+        "model": "myapp.Header",
+        "pk": 1,
+        "fields": {
+            "update_at": "2016-12-06T00:00:00+09:00"
+        }
+    },
+    {
+        "model": "myapp.Header",
+        "pk": 2,
+        "fields": {
+            "update_at": "2016-12-07T00:00:00+09:00"
+        }
+    },
+    {
+        "model": "myapp.Detail",
+        "pk": 1,
+        "fields": {
+            "header": 1,
+            "purchase_date": "2016-12-04",
+            "name": "りんご",
+            "price": 100
+        }
+    },
+    {
+        "model": "myapp.Detail",
+        "pk": 2,
+        "fields": {
+            "header": 1,
+            "purchase_date": "2016-12-05",
+            "name": "みかん",
+            "price": 200
+        }
+    },
+    {
+        "model": "myapp.Detail",
+        "pk": 3,
+        "fields": {
+            "header": 2,
+            "purchase_date": "2016-12-04",
+            "name": "ぶどう",
+            "price": 100
+        }
+    }
+]

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Handsontable</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "lib/handsontable.css" %}" />
+  </head>
+  <body>
+    <!--id=gridにHandsontableの値が設定される-->
+    <div id="grid">
+    </div>
+
+    <button type="button" id="add">行の追加</button>
+    <button type="button" id="save">保存</button>
+    <a href="{% url 'my:record-index' %}">一覧へ戻る</a>
+
+    <script src="{% static "lib/handsontable.full.min.js" %}"></script>
+    <script src="{% static "lib/js.cookie.js" %}"></script>
+    <script src="{% static "js/myscript.js" %}"></script>
+  </body>
+</html>
